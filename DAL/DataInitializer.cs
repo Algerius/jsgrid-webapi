@@ -1,10 +1,8 @@
-﻿using System;
+﻿using JSGridWebAPISample.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using JSGridWebAPISample.Models;
 
-namespace JSGridWebAPISample.DAL {
+namespace JSGridWebAPISample.DAL
+{
 
     public class DataInitializer: System.Data.Entity.DropCreateDatabaseAlways<DataContext> {
 

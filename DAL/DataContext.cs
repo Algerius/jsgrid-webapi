@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using JSGridWebAPISample.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Web;
-using JSGridWebAPISample.Models;
 
-namespace JSGridWebAPISample.DAL {
+namespace JSGridWebAPISample.DAL
+{
 
     public class DataContext: DbContext {
+        public DataContext()
+            : base()
+        {
+        }
 
         public DbSet<Client> Client { get; set; }
 
